@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open("in1.txt")
+sys.stdin = open("in5.txt")
 n, m = map(int, input().split())
 a = list(map(int, input().split()))
 a.sort()
