@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open("in5.txt")
+# sys.stdin = open("in5.txt")
 
 
 def check(num):
