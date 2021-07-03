@@ -1,5 +1,4 @@
 import sys
-
 sys.stdin = open("in3.txt", "r")
 
 a = input()
