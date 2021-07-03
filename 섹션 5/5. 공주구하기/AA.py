@@ -1,8 +1,6 @@
 import sys
 from collections import deque
 
-# sys.stdin = open("in1.txt", "r")
-
 n, k = map(int, input().split())
 
 dq = deque(list(range(1, n+1)))
