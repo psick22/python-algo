@@ -11,12 +11,12 @@ def dfs(L, s):
         for i in range(n):
             for j in range(n):
                 if x[i][j] == 1:
-                    min_distance = 2147000000
+                    temp_min = 2147000000
                     for p in res:
                         temp = abs(pizza[p][0] - i) + abs(pizza[p][1] - j)
-                        if temp < min_distance:
-                            min_distance = temp
-                    case_sum_distance += min_distance
+                        if temp < temp_min:
+                            temp_min = temp
+                    case_sum_distance += temp_min
 
         if case_sum_distance < total_min:
             total_min = case_sum_distance
