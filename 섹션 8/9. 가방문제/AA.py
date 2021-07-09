@@ -1,10 +1,13 @@
 import sys
 
-sys.stdin = open("in1.txt", 'r')
+#sys.stdin = open("in1.txt", 'r')
 
-n, limit, = map(int, input().split())
-backs = []
+n, m = map(int, input().split())
+dy = [0] * (m + 1)
+
 for i in range(n):
-    weight, price = map(int, input().split())
-    backs.append((weight, price))
+    w, v = map(int, input().split())
+    for j in range(w, m + 1):
+        dy[j] = max(dy[j - w] + v, dy[j])
 
+print(dy[m])
